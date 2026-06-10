@@ -1,0 +1,14 @@
+venv/
+ENV/
+env/
+
+build/
+dist/
+*.spec
+
+.idea/
+
+my_vault.db
+
+__pycache__/
+*.pyc
