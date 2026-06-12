@@ -22,7 +22,7 @@ def _load_app_icon() -> QtGui.QIcon:
     يُحمّل الأيقونة بالأولوية: logo.ico ثم logo.png ثم QIcon فارغ.
     يعمل سواء شُغّل البرنامج من المصدر أو من EXE مُجمَّع بـ PyInstaller.
     """
-    for name in ("img.ico", "logo.png"):
+    for name in ("assets/img.ico", "assets/logo.png"):
         path = resource_path(name)
         if os.path.exists(path):
             icon = QtGui.QIcon(path)
@@ -1171,7 +1171,7 @@ class SplashScreen(QtWidgets.QWidget):
         )
 
         # ── تحميل اللوغو (resource_path يعمل داخل EXE وخارجه) ─────────────
-        logo_path  = resource_path("logo.png")
+        logo_path  = resource_path("assets/logo.png")
         self._logo = QtGui.QPixmap(logo_path) if os.path.exists(logo_path) else QtGui.QPixmap()
 
         # ── متغيرات التقدم ─────────────────────────────────────────────────
@@ -1288,7 +1288,7 @@ class SplashScreen(QtWidgets.QWidget):
         p.setPen(QtGui.QPen(QtGui.QColor("#2a4060")))
         p.drawText(QtCore.QRectF(0, H - 22, W, 16),
                    QtCore.Qt.AlignmentFlag.AlignHCenter,
-                   "© 2026 SteganoShield  —  All Rights Reserved")
+                   "© 2026 Yossof Al-madhagi  —  All Rights Reserved")
 
         p.end()
 
