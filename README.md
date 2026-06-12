@@ -27,6 +27,10 @@
 
 <hr>
 
+<h2>🔥Quick Installation</h2>
+<p>Run the StegoNode_Setup.exe and follow the quick and easy installation instructions.</p>
+<pre><code>StegoNode_Setup.exe</code></pre>
+
 <h2>📖 How to Use</h2>
 
 <h3>🟩 1. "Encrypt / Decrypt" Tab</h3>
